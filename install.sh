@@ -78,7 +78,7 @@ function check_download {
 function setup_venv {
     if [ ! -d "${K_SHAKETUNE_VENV_PATH}" ]; then
         echo "[SETUP] Creating Python virtual environment..."
-        python3.11 -m venv "${K_SHAKETUNE_VENV_PATH}"
+        python3.9 -m venv "${K_SHAKETUNE_VENV_PATH}"
     else
         echo "[SETUP] Virtual environment already exists. Continuing..."
     fi
